@@ -42,7 +42,7 @@ Download, Install and set up Intercept
 - The program is now waiting for you to hit whichever key you want to reprogram, so hit a key on your second keyboard/USB Numpad
 - The program will show you what key you hit, as well as information about which device you used
 - It now wants you to input what keys you want the program to send when the button is hit. Since one of the keys we want aren't on the standard keyboard we've got some trickery to do
-- Hold down <kbd>CTRL</kbd> and hit the same button again, then release <kbd>CTRL</kbd> and hit <kbd>ESC</kbd> to finish giving inputs
+- Hold down <kbd>CTRL</kbd> and hit the same button you hit before, then release both buttons and hit <kbd>ESC</kbd> to finish giving insctructions
 - Intercept will now ask for a label, so type something that you'll remember for that key, I just use the normal key name but you can do whatever
 - It will now show you a breakdown of the label name, what device was used, what key was pressed, and what you want the program to output. If it all looks good, hit <kbd>S</kbd> to save, or <kbd>C</kbd> to cancel
 - It's easiest if you repeat the previous steps for ALL the keys on your second keyboard / USB numpad
@@ -104,22 +104,3 @@ Soundswitch
 Borderless Gaming
 - https://github.com/Codeusa/Borderless-Gaming/releases
 - Lets you run any program in windowed borderless. This includes those that don't by default have that functionality. Underneath the download graphic is an Assets section, click on the .exe to download. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
