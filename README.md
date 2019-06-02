@@ -5,12 +5,14 @@ The information here is a resource intended to be used alongside this my tutoria
 
 VIDEO LINK!
 
+
 ### Table of Contents
 - [Prerequisites for this to work](prerequisites)
 - [Install Interception](interception)
-- [Install & Configure Intercept](table-of-contents)
-- [Install & Configure Autohotkey](table-of-contents)
-- [Helpful Additional Programs](table-of-contents)
+- [Install & Configure Intercept](intercept)
+- [Install & Configure Autohotkey](autohotkey)
+- [Soundboard /w Joystick & Voice Controls](table-of-contents)
+- [Other Helpful Programs](table-of-contents)
 
 ### Prerequisites
 - Decide first if you want to use a separate keyboard or USB Numpad, or if you want to use the numpad on your main keyboard. 
@@ -29,6 +31,7 @@ Download and Install Interception
 - Now copy and paste (or type) the following command: `install-interception.exe /install` and hit enter to install Interception
 - Make sure to restart your computer once it finishes. 
 
+
 ### Intercept (for second keyboards or USB Numpads, skip if only using your keyboard's numpad)
 Download, Install and set up Intercept
 - Download the Intercept.zip file included in this GitHub
@@ -40,7 +43,7 @@ Download, Install and set up Intercept
 - It now wants you to input what keys you want the program to send when the button is hit. Since one of the keys we want aren't on the standard keyboard we've got some trickery to do
 - Hold down <kbd>CTRL</kbd> and hit the same button again, then release <kbd>CTRL</kbd> and hit <kbd>ESC</kbd> to finish giving inputs
 - Intercept will now ask for a label, so type something that you'll remember for that key, I just use the normal key name but you can do whatever
-- It will now show you a breakdown of the label name, what device was used, what key was pressed, and what you want the program to output. If it all looks good, hit S to save, or C to cancel
+- It will now show you a breakdown of the label name, what device was used, what key was pressed, and what you want the program to output. If it all looks good, hit <kbd>S</kbd> to save, or <kbd>C</kbd> to cancel
 - It's easiest if you repeat the previous steps for ALL the keys on your second keyboard / USB numpad
 - After you've made an entry for every key, close out of Intercept and go to the folder it is loaded in, you should see a keyremap.ini file, open it in notepad
 - You'll see a bunch of entries like the one below. The first line is the label you made, second line is the device information, third is the triggering key, and fourth is the output combination
@@ -54,9 +57,11 @@ combo=76,0,0|e,0,0|e,0,1|76,0,1
 - We want to wrap every key press in an <kbd>F24</kbd> button press, currently they are wrapped by <kbd>CTRL</kbd>. The Scancode for <kbd>CTRL</kbd> is 1D and <kbd>F24</kbd> is 76. Using Notepad's find and replace function, simply find every instance of 1D and replace it with 76
 - Once that is done then Intercept should be completely set up
 
-
-
-
+### AutoHotKey
+Download, Install, and configure AutoHotKey
+- Go to https://www.autohotkey.com/ and download the current version
+- You'll get a setup.exe, run it to install autohotkey on your computer
+- 
 
 
 
