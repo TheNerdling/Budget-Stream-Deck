@@ -9,10 +9,11 @@ VIDEO LINK!
 ### Table of Contents
 - Prerequisites for this to work
 - Install Interception
-- [Install & Configure Intercept](intercept)
+- Install & Configure Intercept
 - Install & Configure Autohotkey
 - Soundboard /w Joystick & Voice Controls
-- [Other Helpful Programs](table-of-contents)
+- Other Helpful Programs
+
 
 ### Prerequisites
 - Decide first if you want to use a separate keyboard or USB Numpad, or if you want to use the numpad on your main keyboard. 
@@ -59,9 +60,61 @@ combo=76,0,0|e,0,0|e,0,1|76,0,1
 
 ### AutoHotKey
 Download, Install, and configure AutoHotKey
-- Go to https://www.autohotkey.com/ and download the current version
-- You'll get a setup.exe, run it to install autohotkey on your computer
-- 
+- Go to https://www.autohotkey.com/
+- Download and install the current version
+- Autohotkey works by creating scripts in notepad or other text editing software(Don't use Word), and changing them to .ahk files
+- Download whichever of my Keybind AHK files included in this Github you would like. Numpad is for using the numpad on your regular keyboard, USB is for a USB Numpad, and Blank just has the starting commands that are useful but allows you to start from scratch creating whatever hotkeys you want. 
+- If you want more information about setting up hotkeys within AHK, go watch the Youtube Video I made showing how to set all of this up:
+
+
+### Soundboard w/ Joystick & Voice Control
+Download and Install Voice Attack
+- Go to https://voiceattack.com/ 
+- Download and install VoiceAttack. This is a soundboard program that by defaul accepts voice, keyboard, and gamepad inputs. 
+
+Download, Install, and configure Vjoy
+- Go to https://sourceforge.net/projects/vjoystick/ 
+- Download and install vJoy. This program allows you to create a virtual (aka fake) Joystick that your computer thinks is real
+- Go to where you installed vJoy (C:/Program Files/vJoy) by default. in the x64 folder are two programs you want to familiarize yourself with
+- vJoyConf.exe and vJoyConfig.exe do the same thing, and let you configure the specifics of your fake joystick. For our purposes, We only want 1 device, with 0 Axes & POV Hats(aka directional pad), no effects, and 128 buttons. When that is done click Apply. You'll hear the device disconnect/reconnect sound, which is the computer thinking the default vJoy device was disconnected, and the new one was connected. 
+- JoyMonitor.exe opens a screen that shows the current vJoy devices, and indicates when an axis/button/hat is pressed, which is crucial for making sure the autohotkey script you make runs correctly
+- Go into VoiceAttack, in the bottom right is a wrench icon, click on that. Under the general tab is a Joystick Options button. Click it and make sure to Assign vJoy to the Joystick 1 option. This makes VoiceAttack look for inputs on the fake device. 
+
+Configure AutoHotKey to output vJoy commands
+- Autohotkey by default is unable to do any joystick output. But with the right addon's to AHK we can.
+- Go to https://github.com/evilC/AHK-CvJoyInterface and download the github
+- What we want is the file called CvJoyInterface.ahk. This needs to be moved to the library folder within the AutoHotKey installation so that it is easy to link to. Copy the file, then navigate to AutoHotKey's install location (default location is `C:/Program Files/AutoHotKey`). Open the Lib folder and paste the file there. Now with a simple command we can add this library to any AHK script. 
+- In your AHK script, add `#include <CvJoyInterface>` near the beginning to link the library
+- Create a vJoy class with `vJoyInterface := new CvJoyInterface()` and now add the vJoy device on the next line with `vJoystick := vJoyInterface.Devices[1]`
+- Use the following code to ouput a button down then button up event
+```
+vJoystick.SetBtn(1,128) ;the 1 means press, 128 is the number of the button to be pressed
+Sleep, 50
+vJoystick.SetBtn(0,128) ;the 1 means release the button, and again the 128 is the number of the button to be released
+```
+- Congrats! You have installed a sound board program, virtual joystick, and modified AutoHotKey to output button presses of the virtual joystick and can now use it as hotkeys within the soundboard program
+
+
+### Other Helpful Programs
+
+Soundswitch
+- https://soundswitch.aaflalo.me/
+- Allows you to set up what speaker/microphone devices you use, and assign a hotkey to swap between them. I use it so that I never have to swap my headphones and speakers as the default output device
+
+Borderless Gaming
+- https://github.com/Codeusa/Borderless-Gaming/releases
+- Lets you run any program in windowed borderless. This includes those that don't by default have that functionality. Underneath the download graphic is an Assets section, click on the .exe to download. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
