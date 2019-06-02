@@ -1,7 +1,7 @@
 # Budget Stream Deck 
 Documentation, files, and links to set up your own stream deck by converting either a USB numpad, second keyboard, or the numpad on your main keyboard into one. (under construction)
 
-The information here is a resource intended to be used alongside this my tutorial video. I will not be going into as much detail here so if you have any questions please watch the video linked below.
+The information here is a resource intended to be used alongside my tutorial video. I will not be going into as much detail here so if you have any questions please watch the video linked below.
 
 VIDEO LINK!
 
@@ -17,7 +17,7 @@ VIDEO LINK!
 
 ### Prerequisites
 - Decide first if you want to use a separate keyboard or USB Numpad, or if you want to use the numpad on your main keyboard. 
-- If you want to use a second keyboard or USB Numpad, then plug in your preferred device and go into Device Manager and make sure under the keyboard tab that there isn't more than 10 HID devices listed. 
+- If you want to use a second keyboard or USB Numpad, then plug in the device you intend to use and go into Device Manager and make sure under the keyboard tab that there isn't more than 10 HID devices listed. 
 - If there are 10 or less, you're good to go. If there are more than 10, then you can't use the second device unless you want to pay ~$2200 for the Interception license (The free version only works with up to 10 HID devices)
 
 
@@ -37,7 +37,7 @@ Download and Install Interception
 Download, Install and set up Intercept
 - Download the Intercept.zip file included in this GitHub
 - Extract the file to wherever you want
-- Make sure to set Intercept.exe to run as administrator
+- Make sure to set Intercept.exe to run as administrator, and run it
 - Hit <kbd>A</kbd> to start adding a new keybind
 - The program is now waiting for you to hit whichever key you want to reprogram, so hit a key on your second keyboard/USB Numpad
 - The program will show you what key you hit, as well as information about which device you used
