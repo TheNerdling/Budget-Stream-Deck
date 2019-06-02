@@ -12,7 +12,8 @@ VIDEO LINK!
 - Install & Configure Intercept
 - Install & Configure Autohotkey
 - Soundboard /w Joystick & Voice Controls
-- Other Helpful Programs
+- Other Helpful Programs/Info
+- Credits
 
 
 ### Prerequisites
@@ -95,7 +96,7 @@ vJoystick.SetBtn(0,128) ;the 1 means release the button, and again the 128 is th
 - Congrats! You have installed a sound board program, virtual joystick, and modified AutoHotKey to output button presses of the virtual joystick and can now use it as hotkeys within the soundboard program
 
 
-### Other Helpful Programs
+### Other Helpful Programs/Info
 
 Soundswitch
 - https://soundswitch.aaflalo.me/
@@ -104,3 +105,20 @@ Soundswitch
 Borderless Gaming
 - https://github.com/Codeusa/Borderless-Gaming/releases
 - Lets you run any program in windowed borderless. This includes those that don't by default have that functionality. Underneath the download graphic is an Assets section, click on the .exe to download. 
+
+Scan Codes
+ - http://www.quadibloc.com/comp/scan.htm
+ - I couldn't find a definitive list of scan codes that includes everything from ABC to F24 that worked and was recognized 100% by Intercept/AHK/OBS, but this breakdown had a bunch of different lists, specifically the one near the end of the page, that were instrumental in figuring out what scancodes to use in Intercept and that would be recognized.
+
+
+
+### Credits
+
+###### TaranVH - https://www.youtube.com/watch?v=y3e_ri-vOIo
+This is where I learned about Intercept/Interception from, he has great tutorials about how to set things up, as well as further methods for making multiple keyboards work cheaply and easily. My focus was on streaming where his was more on just hotkeys for specific programs, so there was a lot of tinkering and figuring out the best way to make things work how I wanted, but the bulk of the initial setup is due entirely to him.
+
+###### Kamaz - https://www.orbiter-forum.com/showthread.php?t=30829
+The man, the myth, the one who makes this entire thing possible. This is the person that developped Intercept and released it for free. The only reason I include a download for Intercept myself instead of just linking to the post above is because it requires you to log into a forum site for a game most people might now have or be interested in. Full props to this amazing guy.
+
+###### AutoHotKey Forum People
+There are too many to name or link to, but 99% of the issues I ran into while writing and figuring out the AHK code were solved by other peoples questions and answers on forum posts. I can't say enough thank you's to the people that donate their time on those forums to help others. 
