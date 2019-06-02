@@ -7,11 +7,11 @@ VIDEO LINK!
 
 
 ### Table of Contents
-- [Prerequisites for this to work](prerequisites)
-- [Install Interception](interception)
+- Prerequisites for this to work
+- Install Interception
 - [Install & Configure Intercept](intercept)
-- [Install & Configure Autohotkey](autohotkey)
-- [Soundboard /w Joystick & Voice Controls](table-of-contents)
+- Install & Configure Autohotkey
+- Soundboard /w Joystick & Voice Controls
 - [Other Helpful Programs](table-of-contents)
 
 ### Prerequisites
