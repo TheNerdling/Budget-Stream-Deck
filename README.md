@@ -91,7 +91,7 @@ Configure AutoHotKey to output vJoy commands
 ```
 vJoystick.SetBtn(1,128) ;the 1 means press, 128 is the number of the button to be pressed
 Sleep, 50
-vJoystick.SetBtn(0,128) ;the 1 means release the button, and again the 128 is the number of the button to be released
+vJoystick.SetBtn(0,128) ;the 0 means release the button, and again the 128 is the number of the button to be released
 ```
 - Congrats! You have installed a sound board program, virtual joystick, and modified AutoHotKey to output button presses of the virtual joystick and can now use it as hotkeys within the soundboard program
 
