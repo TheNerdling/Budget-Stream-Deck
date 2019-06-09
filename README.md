@@ -59,19 +59,6 @@ combo=76,0,0|e,0,0|e,0,1|76,0,1
 - We want to wrap every key press in an <kbd>F24</kbd> button press, currently they are wrapped by <kbd>CTRL</kbd>. The Scancode for <kbd>CTRL</kbd> is 1D and <kbd>F24</kbd> is 76. Using Notepad's find and replace function, simply find every instance of 1D and replace it with 76
 - Once that is done then Intercept should be completely set up
 
-Scan Codes - Key Output
-64 - F13
-65 - F14
-66 - F15
-67 - F16
-68 - F17
-69 - F18
-6A - F19
-6B - F20
-6C - F21
-6D - F22
-6E - F23
-76 - F24
 
 ### AutoHotKey
 Download, Install, and configure AutoHotKey
@@ -81,9 +68,6 @@ Download, Install, and configure AutoHotKey
 - Download whichever of my Keybind AHK files included in this Github you would like. Numpad is for using the numpad on your regular keyboard, USB is for a USB Numpad, and Blank just has the starting commands that are useful but allows you to start from scratch creating whatever hotkeys you want. 
 - If you want more information about setting up hotkeys within AHK, go watch the Youtube Video I made showing how to set all of this up:
 
-Unicode - Output
-{U+0093} - OBS_KEY_MASSYO
-{U+0094} - OBS_KEY_TOUROKU
 
 ### Soundboard w/ Joystick & Voice Control
 Download and Install Voice Attack
